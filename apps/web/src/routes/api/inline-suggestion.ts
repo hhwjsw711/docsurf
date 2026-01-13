@@ -235,7 +235,7 @@ async function streamInlineSuggestion({
       apiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY!,
    });
    const { fullStream } = streamText({
-      model: google.languageModel("gemini-2.0-flash-lite"),
+      model: google.languageModel("gemini-2.5-flash"),
       system: getSystemPrompt(),
       prompt,
       experimental_transform: smoothStream({

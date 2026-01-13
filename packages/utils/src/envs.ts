@@ -34,7 +34,7 @@ export function getConvexAppUrls(): string[] {
 
 export function getAppUrl() {
    if (process.env.VERCEL_ENV === "production" || process.env.NODE_ENV === "production") {
-      return "https://docsurf.ai";
+      return "https://doc.isllm.com";
    }
 
    if (process.env.VERCEL_ENV === "preview") {
@@ -49,7 +49,7 @@ export function getEmailUrl() {
    //    return "http://localhost:3001";
    // }
 
-   return "https://docsurf.ai";
+   return "https://doc.isllm.com";
 }
 // This is used if you have a different website url than the app url
 // export function getWebsiteUrl() {

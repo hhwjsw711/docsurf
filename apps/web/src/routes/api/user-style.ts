@@ -64,7 +64,7 @@ export const ServerRoute = createServerFileRoute("/api/user-style").methods({
          });
 
          const { fullStream } = streamText({
-            model: google.languageModel("gemini-2.0-flash-lite"),
+            model: google.languageModel("gemini-2.5-flash"),
             system: "You are an expert writing assistant and literary style analyst.",
             prompt: analysisPrompt,
             temperature: 0.3,

@@ -8,7 +8,7 @@ export type TRoutes = FileRouteTypes["fullPaths"];
 
 // Define your sitemap
 export const sitemap: Sitemap<TRoutes> = {
-   siteUrl: process.env.VITE_SITE_URL || "https://docsurf.ai",
+   siteUrl: process.env.VITE_SITE_URL || "https://doc.isllm.com",
    defaultPriority: 0.5,
    defaultChangeFreq: "weekly",
    routes: {
